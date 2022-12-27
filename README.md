@@ -1,5 +1,5 @@
 # Fastify Example
-Straightforward RESFTful API design implemneted in Fastify. Really fun!
+Straightforward RESFTful API design implemneted in Fastify. Played around with using TypeScript and the integration was much better than what I remember. Really fun!
 
 ## How to run
 1. `npm install` to get dependencies.
