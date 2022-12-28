@@ -16,7 +16,7 @@ let data: User[] = generateUsers();
 fastify.register(
   function (fastify, _, done) {
     fastify.get("/users", function (request, reply) {
-      reply.send(JSON.stringify(data));
+      reply.send(data);
     });
     fastify.get(
       "/users/:id",
@@ -25,7 +25,7 @@ fastify.register(
         const index = data.map((e) => e.id).indexOf(id);
 
         if (index > -1) {
-          reply.status(200).send(JSON.stringify(data[index]));
+          reply.status(200).send(data[index]);
         } else {
           reply.status(404).send();
         }
